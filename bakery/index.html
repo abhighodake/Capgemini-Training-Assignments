@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    <style>
+        img {
+            width: 200px;
+            height: 300px;
+        }
+        .nav {
+            background-color: aqua;
+        }
+        ul {
+            display: flex;
+            width: 100%;
+            list-style: none;
+            justify-content: flex-end;
+        }
+        li {
+            margin-top: 10px;
+            margin-right: 30px;
+        }
+        a {
+            color: wheat;
+            text-decoration: none;
+            font-size: large;
+        }
+        #cart-item {
+            margin: 20px;
+            padding: 20px;
+            border: black solid 1px;
+            background-color: #f9f9f9;
+        }
+        .cart-item {
+            border-bottom: 1px solid #ccc;
+            padding: 10px 0;
+        }
+    </style>
+</head>
+<body>
+    <nav style="height: 50px;" class="bg-dark">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-2 mt-1">
+                    <img src="./img/cakes/logo2.jfif" style="height: 45px; width: 150px;">
+                </div>
+                <div class="col-md-10">
+                    <ul>
+                        <li><a href="#">Home</a></li>
+                        <li><a href="#">About</a></li>
+                        <li><a href="#cart-item">Cart</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <div class="cake" style="background-color: antiquewhite;">
+        <h2 style="margin-left: 60px;">Cakes</h2>
+        <div class="container pb-5">
+            <div class="row">
+                <div class="col-md-4">
+                    <div class="card" style="width: 18rem;">
+                        <img src="./img/cakes/chocolate.jfif" class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <h5 class="card-title">Chocolate Cake</h5>
+                            <p class="card-text">1kg :- 250 RS</p>
+                            <label for="choco-ca">Select Weight:</label>
+                            <select name="choco-ca" id="choco-ca" class="quant">
+                                <option value="1">1</option>
+                                <option value="2">2</option>
+                                <option value="3">3</option>
+                            </select>
+                            <button type="button" class="btn btn-primary add-to-cart">Add to cart</button>
+                        </div>
+                    </div>
+                </div>
+                <!-- Repeat for other cakes -->
+                <div class="col-md-4">
+                    <div class="card" style="width: 18rem;">
+                        <img src="./img/cakes/black-forest.jfif" class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <h5 class="card-title">Black-forest Cake</h5>
+                            <p class="card-text">1kg :- 300 RS</p>
+                            <label for="choco-ca">Select Weight:</label>
+                            <select name="choco-ca" id="choco-ca" class="quant">
+                                <option value="1">1</option>
+                                <option value="2">2</option>
+                                <option value="3">3</option>
+                            </select>
+                            <button type="button" class="btn btn-primary add-to-cart">Add to cart</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card" style="width: 18rem;">
+                        <img src="./img/cakes/rasmalai.jfif" class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <h5 class="card-title">Rasmalai Cake</h5>
+                            <p class="card-text">1kg :- 350 RS</p>
+                            <label for="choco-ca">Select Weight:</label>
+                            <select name="choco-ca" id="choco-ca" class="quant">
+                                <option value="1">1</option>
+                                <option value="2">2</option>
+                                <option value="3">3</option>
+                            </select>
+                            <button type="button" class="btn btn-primary add-to-cart">Add to cart</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="pastries" style="background-color: azure;">
+        <h2 style="margin-left: 60px;">Pastries</h2>
+        <div class="container pb-5">
+            <div class="row">
+                <div class="col-md-4">
+                    <div class="card" style="width: 18rem;">
+                        <img src="./img/cakes/choco-pas.jfif" class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <h5 class="card-title">Chocolate Pastry</h5>
+                            <p class="card-text">1 :- 50 RS</p>
+                            <label for="chco-q">Select quantity:</label>
+                            <select name="chco-q" id="chco-q" class="quant">
+                                <option value="1">1</option>
+                                <option value="2">2</option>
+                                <option value="3">3</option>
+                            </select>
+                            <button type="button" class="btn btn-primary add-to-cart">Add to cart</button>
+                        </div>
+                    </div>
+                </div>
+                <!-- Repeat for other pastries -->
+                <div class="col-md-4">
+                    <div class="card" style="width: 18rem;">
+                        <img src="./img/cakes/blc-pas.jfif" class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <h5 class="card-title">Black-forest Pastry</h5>
+                            <p class="card-text">1 :- 55 RS</p>
+                            <label for="chco-q">Select quantity:</label>
+                            <select name="chco-q" id="chco-q" class="quant">
+                                <option value="1">1</option>
+                                <option value="2">2</option>
+                                <option value="3">3</option>
+                            </select>
+                            <button type="button" class="btn btn-primary add-to-cart">Add to cart</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card" style="width: 18rem;">
+                        <img src="./img/cakes/ras-pas.jfif" class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <h5 class="card-title">Rasmalai Pastry</h5>
+                            <p class="card-text">1 :- 60 RS</p>
+                            <label for="chco-q">Select quantity:</label>
+                            <select name="chco-q" id="chco-q" class="quant">
+                                <option value="1">1</option>
+                                <option value="2">2</option>
+                                <option value="3">3</option>
+                            </select>
+                            <button type="button" class="btn btn-primary add-to-cart">Add to cart</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div id="cart-item">
+        <h3>Your Cart</h3>
+    </div>
+
+    <script>
+        let cart = [];
+        const items = ["Chocolate Cake", "Black-forest Cake", "Rasmalai Cake", "Chocolate Pastry","Black-forest Pastry","Rasmalai Pastry"];
+        const itemPrices = [250, 300, 350, 50,55,60];
+
+        function addToCart(itemName, quantity) {
+            const itemIndex = items.indexOf(itemName);
+            if (itemIndex !== -1) {
+                const price = itemPrices[itemIndex] * quantity;
+                cart.push({ name: itemName, quantity, price });
+                alert(`${itemName} added to cart successfully`);
+                updateCartView();
+            }
+        }
+
+        function updateCartView() {
+            const cartContainer = document.getElementById("cart-item");
+            cartContainer.innerHTML = '<h3>Your Cart</h3>';
+
+            if (cart.length === 0) {
+                cartContainer.innerHTML += '<p>Your cart is empty!</p>';
+                return;
+            }
+            let total = 0;
+            cart.forEach(item => {
+                const itemElement = document.createElement('div');
+                itemElement.classList.add('cart-item');
+                total = total + item.price;
+                itemElement.innerHTML = `
+                    <h5>${item.name}</h5>
+                    <p>Price: ${item.price} RS</p>
+                    <p>Quantity: ${item.quantity}</p>
+                    `;
+                cartContainer.appendChild(itemElement);
+            });
+            const totalPrice = document.createElement('div');
+            totalPrice.innerHTML = `<b>Total:</b>   <button type="button"> ${total} Pay</button>`;
+            cartContainer.appendChild(totalPrice);
+
+        }
+
+        function initializeEventListeners() {
+            const buttons = document.querySelectorAll('.add-to-cart');
+            buttons.forEach(button => {
+                button.addEventListener('click', () => {
+                    const card = button.closest('.card');
+                    const itemName = card.querySelector('.card-title').textContent;
+                    const selectElement = card.querySelector('.quant');
+                    const quantity = parseInt(selectElement.value);
+                    addToCart(itemName, quantity);
+                });
+            });
+        }
+        initializeEventListeners();
+
+        //document.addEventListener('DOMContentLoaded', initializeEventListeners);
+    </script>
+</body>
+</html>
