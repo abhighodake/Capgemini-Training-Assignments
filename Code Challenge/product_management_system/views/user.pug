@@ -1,0 +1,12 @@
+doctype html
+html
+  head
+    title User Login
+  body(style="display:flex; jusitfy-content:center; align-items:center; flex-direction:column;")
+    h1 User Login 
+    form(action="/userLogin", method="POST")
+      input(type="text" name="name" placeholder="Enter name")
+      br
+      input(type="password" name="pass" placeholder="Enter password")
+      br
+      button(type="submit") Login

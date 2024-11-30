@@ -1,0 +1,25 @@
+doctype html
+html
+  head
+    title Admin Page
+  body
+    h1 Admin Dashboard
+    form(action="/addProduct", method="POST")
+      label(for="name") Product Name:
+      input(type="text" name="name" required)
+      
+      label(for="price") Price:
+      input(type="number" name="price" required)
+
+      label(for="category") Category:
+      input(type="text" name="category" required)
+
+      label(for="manufacturingDate") Manufacturing Date:
+      input(type="date" name="manufacturingDate" required)
+
+      label(for="expDate") Expiry Date:
+      input(type="date" name="expDate" required)
+
+      button(type="submit") Add Product
+
+
