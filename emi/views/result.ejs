@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        body{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            background-image: linear-gradient(to right, lightblue, darkblue);
+            padding-top: 15%;
+        }
+        p{
+            font-weight: bold;
+        }
+    </style>
+    <title>Loan EMI Result</title>
+</head>
+<body>
+    <h1>Loan EMI Calculation Result</h1>
+    <p>Loan Type: <%= loanType.charAt(0).toUpperCase() + loanType.slice(1) %></p>
+    <p>Loan Amount: <%= loanAmount %></p>
+    <p>Monthly EMI: <%= emi %></p>
+
+    <p>Your Salary: <%= salary %></p> <!-- Assuming salary is passed as a variable -->
+
+    <a href="/">Go Back to Loan Selection</a>
+
+    <script>
+        // Assuming the salary and emi are passed correctly to the template
+        var salary = <%= salary %>;
+        var emi = <%= emi %>;
+
+        if (salary < emi) {
+            alert("Your salary is less than the EMI amount. You are not eligible for this loan. Please reduce the loan amount.");
+        }
+    </script>
+</body>
+</html>
